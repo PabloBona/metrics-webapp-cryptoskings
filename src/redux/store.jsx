@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import coinSlice from "./slices/coinSlice";
 
-configureStore({
+const store = configureStore({
     reducer: {
-      // in this reducer we host all the globals states
+      coinSlice
     }
 })
 
-export default configureStore;
+export default store;
