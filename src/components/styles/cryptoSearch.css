@@ -1,3 +1,10 @@
-.background {
+
+.img-max-width {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+}
+
+.img-container {
   background-color: #5887e5;
 }

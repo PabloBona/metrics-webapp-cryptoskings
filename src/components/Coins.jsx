@@ -6,11 +6,8 @@ import CryptoSearch from './CryptoSearch';
 
 const Coins = () => {
   const dispatch = useDispatch();
-
   const coinData = useSelector((state) => state.coinSlice.coin);
-
   const error = useSelector((state) => state.coinSlice.error);
-
   const data = coinData.coins;
 
   if (error) {
