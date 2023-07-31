@@ -8,7 +8,7 @@ const CoinCard = ({ coin, index }) => {
   return (
     <div className={`col-12 col-sm-4 col-md-4 col-lg-4 zero-pad ${cardClass}`}>
       <div className={`card border-0 rounded-0 m-0 ${cardClass}`}>
-        <div className="align-items-md-center card-body d-flex flex-column">
+        <div className="align-items-sm-center card-body d-flex flex-column">
           <div>
           <img className="iconStyle" src={coin.icon} alt="" />
           </div>
