@@ -48,7 +48,7 @@ const CryptoSearch = () => {
   }
 
   return (
-    <div className="background py-2">
+    <div className="background py-2 bottom-border">
       <form onSubmit={handleFormSubmit} className="container">
         <div className="row align-items-center">
           <div className="col-8 col-sm-8">

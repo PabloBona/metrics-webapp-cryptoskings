@@ -7,6 +7,10 @@
 }
 
 .iconStyle {
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
   max-width: 50px;
+}
+
+.zero-pad {
+  padding: 0 !important;
 }

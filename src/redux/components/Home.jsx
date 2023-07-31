@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCoin } from "../slices/coinSlice";
 import CoinCard from "./CoinCard";
-import "../style/home.css";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -44,10 +43,10 @@ const Home = () => {
   }
 
   return (
-    <div className=" coincard">
+    <div className="container">
       <div className="row">
-        {data.map((coin) => (
-          <CoinCard key={coin.rank} coin={coin} />
+        {data.map((coin, index) => (
+          <CoinCard key={coin.rank} coin={coin} index={index} />
         ))}
       </div>
     </div>
