@@ -1,3 +1,7 @@
+.main {
+  font-family: 'Lato', sans-serif;
+}
+
 .odd {
   background-color: #4066b7;
 }
@@ -13,4 +17,9 @@
 
 .zero-pad {
   padding: 0 !important;
+}
+
+.multipleClass {
+  display: flex;
+  flex-direction: row-reverse;
 }
