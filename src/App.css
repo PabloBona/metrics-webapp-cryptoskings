@@ -13,3 +13,7 @@ nav li a {
   color: rgb(173, 173, 173);
   text-decoration: none;
 }
+
+#root {
+  background-color: #4066b7;
+}

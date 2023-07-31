@@ -1,0 +1,12 @@
+.odd {
+  background-color: #4066b7;
+}
+
+.even {
+  background-color: #5887e5;
+}
+
+.iconStyle {
+  filter: grayscale(1);
+  max-width: 50px;
+}

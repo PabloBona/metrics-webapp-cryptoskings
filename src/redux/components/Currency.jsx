@@ -1,8 +1,7 @@
-import { useSelector } from "react-redux"
+ 
 
 const Currency = () => {
-  const coinData = useSelector(state => state.coinSlice)
-  console.log(coinData)
+
   return (
     <>
     <div className="container">
