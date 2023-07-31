@@ -53,21 +53,24 @@ const Coin = () => {
 
   return (
     <div className="main">
-          <div className="main">
-      <div className="row">
-        {data.map((coin, index) => (
-          <CoinCard key={coin.rank} coin={coin} index={index} />
-        ))}
+      <div className="main">
+        <div className="row">
+          <h2 className="text-white bg-stats">Crypto Currency Stats</h2>
+          <>
+            {data.map((coin, index) => (
+              <CoinCard key={coin.rank} coin={coin} index={index} />
+            ))}
+          </>
+        </div>
       </div>
     </div>
-    </div>
-    
+
   );
 };
 
 export default Coin;
 
-      {/* <div className="row">
+{/* <div className="row">
         {data.map((coin, index) => (
            <Link key={coin.rank} to={`/coins/${coin.id}`}>
           <CoinCard key={coin.rank} coin={coin} index={index} />

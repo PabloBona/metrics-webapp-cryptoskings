@@ -23,3 +23,10 @@
   display: flex;
   flex-direction: row-reverse;
 }
+
+.bg-stats {
+  background-color: #1b35ac;
+  font-size: small;
+  margin: 0 0 0 1rem;
+  padding: 0.2rem;
+}
