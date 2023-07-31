@@ -1,9 +1,9 @@
-import { useDispatch, useSelector } from "react-redux";
-import { fetchCoin } from "../slices/coinSlice";
-import CoinCard from "./CoinCard";
-import "../style/home.css";
+import { useDispatch, useSelector } from 'react-redux';
+import CoinCard from './CoinCard';
+import './styles/coins.css';
+import { fetchCoin } from '../redux/slices/coinSlice';
 
-const Coin = () => {
+const Coins = () => {
   const dispatch = useDispatch();
 
   const coinData = useSelector((state) => state.coinSlice.coin);
@@ -53,27 +53,16 @@ const Coin = () => {
 
   return (
     <div className="main">
-      <div className="main">
-        <div className="row">
-          <h2 className="text-white bg-stats">Crypto Currency Stats</h2>
-          <>
-            {data.map((coin, index) => (
-              <CoinCard key={coin.rank} coin={coin} index={index} />
-            ))}
-          </>
-        </div>
+      <div className="row">
+        <h2 className="text-white bg-stats">Crypto Currency Stats</h2>
+        <>
+          {data.map((coin, index) => (
+            <CoinCard key={coin.rank} coin={coin} index={index} />
+          ))}
+        </>
       </div>
     </div>
-
   );
 };
 
-export default Coin;
-
-{/* <div className="row">
-        {data.map((coin, index) => (
-           <Link key={coin.rank} to={`/coins/${coin.id}`}>
-          <CoinCard key={coin.rank} coin={coin} index={index} />
-          </Link>
-        ))}
-      </div> */}
+export default Coins;

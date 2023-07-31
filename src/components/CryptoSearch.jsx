@@ -1,7 +1,7 @@
-import "../style/CryptoSearch.css";
-import { fetchCoin, setGlobalSearch } from "../slices/coinSlice";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchCoin, setGlobalSearch } from '../redux/slices/coinSlice';
+import './styles/cryptoSearch.css';
 
 const CryptoSearch = () => {
   const dispatch = useDispatch();
