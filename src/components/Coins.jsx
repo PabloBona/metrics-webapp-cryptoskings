@@ -2,27 +2,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import CoinCard from './CoinCard';
 import './styles/coins.css';
 import { fetchCoin } from '../redux/slices/coinSlice';
+import CryptoSearch from './CryptoSearch';
 
 const Coins = () => {
   const dispatch = useDispatch();
 
   const coinData = useSelector((state) => state.coinSlice.coin);
-  const isLoading = useSelector((state) => state.coinSlice.isLoading);
+
   const error = useSelector((state) => state.coinSlice.error);
 
   const data = coinData.coins;
-
-  if (isLoading) {
-    return (
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <h2 data-testid="h2test" className="align-items-center d-flex justify-content-center text-light vh-100">Loading...</h2>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   if (error) {
     return (
@@ -52,16 +41,22 @@ const Coins = () => {
   }
 
   return (
-    <div className="main">
-      <div className="row">
-        <h2 className="text-white bg-stats">Crypto Currency Stats</h2>
-        <>
-          {data.map((coin, index) => (
-            <CoinCard key={coin.rank} coin={coin} index={index} />
-          ))}
-        </>
+
+    <>
+      <CryptoSearch />
+      <div className="main">
+        <div className="row">
+          <h2 className="text-white bg-stats m-0">Crypto Currency Stats</h2>
+          <>
+            {data.map((coin, index) => (
+              <CoinCard key={coin.rank} coin={coin} index={index} />
+            ))}
+          </>
+        </div>
       </div>
-    </div>
+
+    </>
+
   );
 };
 

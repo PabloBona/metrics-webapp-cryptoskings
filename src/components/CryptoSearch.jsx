@@ -13,8 +13,8 @@ const CryptoSearch = () => {
     e.preventDefault();
     const searchValue = e.target.elements.searchInput.value.trim();
     dispatch(setGlobalSearch(searchValue));
+    console.log(searchValue);
   };
-
   useEffect(() => {
     if (!coinData.length) {
       dispatch(fetchCoin());
@@ -48,7 +48,7 @@ const CryptoSearch = () => {
   }
 
   return (
-    <div className="background py-2 bottom-border">
+    <div className="background py-2">
       <form onSubmit={handleFormSubmit} className="container">
         <div className="row align-items-center">
           <div className="col-8 col-sm-8">

@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import logo from '../logo.png';
 
 const Nav = () => (
   <div>
@@ -6,7 +7,7 @@ const Nav = () => (
       <div className="container">
         <div className="d-flex align-items-center">
           <h5 className="text-white align-self-end">Crypto</h5>
-          {/* <img src={logo} alt="planet" className="logo" /> */}
+          <img src={logo} alt="planet" className="logo" />
           <h5 className="text-white align-self-end">King</h5>
         </div>
         <div>

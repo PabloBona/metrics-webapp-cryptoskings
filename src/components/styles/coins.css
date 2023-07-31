@@ -27,6 +27,8 @@
 .bg-stats {
   background-color: #1b35ac;
   font-size: small;
-  margin: 0 0 0 1rem;
-  padding: 0.2rem;
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  padding-left: 1.5rem;
 }
