@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { fetchCoin } from '../redux/slices/coinSlice';
+import './styles/coinDetail.css';
+// import DetailCard from './DetailCard';
 
 const CoinDetail = () => {
   const { id } = useParams();
@@ -37,14 +39,52 @@ const CoinDetail = () => {
   }
 
   return (
-    <div>
-      <h2>
-        Coin with id:
-        {' '}
-        {id}
-      </h2>
-      <div key={coin.id}>
-        {coin.name}
+    <div className="container" key={coin.id}>
+      <div className="row name-details">
+        <div className="col-6 d-flex fs-1 justify-content-center text-light">
+          <p className="align-self-center m-4">
+            {coin.name}
+          </p>
+        </div>
+        <div className="col-6">
+          <div className="align-self-center">
+            <img className="m-4" src={coin.icon} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="row rank-details">
+        <div className="col-6 d-flex fs-5 justify-content-center text-light">
+          <p className="align-self-center m-4">
+            {coin.symbol}
+          </p>
+        </div>
+        <div className="col-6">
+          <div className="ccol-6 d-flex fs-5 justify-content-center text-light">
+            <p className="align-self-center my-4 text-light">
+              U$S
+              {' '}
+              {coin.price.toFixed(5)}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="row name-details">
+        <div className="col-6 d-flex fs-5 justify-content-center text-light">
+          <p className="align-self-center m-4">
+            Rank #
+            {coin.rank}
+          </p>
+        </div>
+        <div className="col-6">
+          <div className="ccol-6 d-flex fs-5 justify-content-center text-light">
+            <p className="align-self-center my-4 text-light">
+              Last24hs
+              {' '}
+              $
+              {coin.priceChange1d}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
