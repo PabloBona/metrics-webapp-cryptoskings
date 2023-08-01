@@ -6,12 +6,7 @@
 }
 
 .img-container {
-  background-color: #4066b7;
   padding: 10px 0;
-}
-
-.search-form {
-  background-color: #4066b7;
 }
 
 .coin-search-input::placeholder {

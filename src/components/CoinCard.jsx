@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import './styles/coinCard.css';
 
 const CoinCard = ({ coin }) => (
   <div className="coin-card col-6 col-sm-4 col-md-4 col-lg-3">
@@ -9,8 +10,8 @@ const CoinCard = ({ coin }) => (
           <div className="align-self-center">
             <img className="iconStyle p-1 rounded-5" src={coin.icon} alt="" />
           </div>
-          <div className="">
-            <h3 className="fs-4 fw-bold my-3 text-center text-white">{coin.name}</h3>
+          <div>
+            <h3 className="coin-name fw-bold my-3 text-center text-white">{coin.name}</h3>
           </div>
           <div className="align-self-center">
             <p className="fs-5 text-center text-white m-0">
