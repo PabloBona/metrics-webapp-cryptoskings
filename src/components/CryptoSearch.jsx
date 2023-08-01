@@ -36,7 +36,7 @@ const CryptoSearch = () => {
               <input
                 onChange={handleInputChange}
                 type="text"
-                className="form-control coin-search-input"
+                className="form-control coin-search-input text-white fs-6"
                 placeholder="Enter coin name E.g: Litecoin"
               />
             </div>

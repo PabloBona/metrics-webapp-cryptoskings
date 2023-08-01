@@ -59,7 +59,6 @@ const Coins = () => {
             </div>
           </div>
         </section>
-
       </main>
     </>
   );

@@ -1,27 +1,21 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import './styles/coinDetail.css';
 
-const DetailCard = ({ coin }) => (
+const DetailCard = ({ atributte, title }) => (
   <>
-    <div className="row rank-details">
-      <div className="col-6 d-flex fs-5 justify-content-center text-light">
-        <p className="align-self-center m-4">
-          Rank #
-          {coin.rank}
-        </p>
-      </div>
-      <div className="col-6">
-        <div className="ccol-6 d-flex fs-5 justify-content-center text-light">
-          <p className="align-self-center my-4 text-light">
-            Last24hs
-            {' '}
-            $
-            {coin.priceChange1d}
-          </p>
-        </div>
-      </div>
+    <div className="col-12 d-flex justify-content-between text-light details">
+      <p className="align-self-center m-4 fs-3">
+        {title}
+      </p>
+      <p className="align-self-center m-4 fs-2">
+        {atributte}
+      </p>
     </div>
   </>
 );
 
+DetailCard.propTypes = {
+  atributte: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  title: PropTypes.string.isRequired,
+};
 export default DetailCard;

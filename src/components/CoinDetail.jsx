@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import { fetchCoin } from '../redux/slices/coinSlice';
 import './styles/coinDetail.css';
-// import DetailCard from './DetailCard';
+import DetailCard from './DetailCard';
 
 const CoinDetail = () => {
   const { id } = useParams();
@@ -39,52 +39,19 @@ const CoinDetail = () => {
   }
 
   return (
-    <div className="container" key={coin.id}>
+    <div className="container-fluid" key={coin.id}>
       <div className="row name-details">
-        <div className="col-6 d-flex fs-1 justify-content-center text-light">
-          <p className="align-self-center m-4">
-            {coin.name}
-          </p>
-        </div>
-        <div className="col-6">
-          <div className="align-self-center">
-            <img className="m-4" src={coin.icon} alt="" />
-          </div>
-        </div>
-      </div>
-      <div className="row rank-details">
-        <div className="col-6 d-flex fs-5 justify-content-center text-light">
-          <p className="align-self-center m-4">
-            {coin.symbol}
-          </p>
-        </div>
-        <div className="col-6">
-          <div className="ccol-6 d-flex fs-5 justify-content-center text-light">
-            <p className="align-self-center my-4 text-light">
-              U$S
-              {' '}
-              {coin.price.toFixed(5)}
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="row name-details">
-        <div className="col-6 d-flex fs-5 justify-content-center text-light">
-          <p className="align-self-center m-4">
-            Rank #
-            {coin.rank}
-          </p>
-        </div>
-        <div className="col-6">
-          <div className="ccol-6 d-flex fs-5 justify-content-center text-light">
-            <p className="align-self-center my-4 text-light">
-              Last24hs
-              {' '}
-              $
-              {coin.priceChange1d}
-            </p>
-          </div>
-        </div>
+        <NavLink to="/" className="text-white btn-back">
+          <i className="bx bx-arrow-back" />
+        </NavLink>
+        <DetailCard atributte={coin.name} title="Coin Name" />
+        <DetailCard atributte={coin.symbol} title="Coin Symbol" />
+        <DetailCard atributte={coin.price.toFixed(5)} title="Coin Prize U$S" />
+        <DetailCard atributte={coin.priceChange1d} title="Prize Change Last 24hs" />
+        <DetailCard atributte={coin.rank} title="Coin Rank" />
+        <DetailCard atributte={coin.marketCap.toFixed(1)} title="Market Cap" />
+        <DetailCard atributte={coin.volume.toFixed(1)} title="Volume" />
+        <DetailCard atributte={coin.totalSupply.toFixed(1)} title="Total Supply" />
       </div>
     </div>
   );

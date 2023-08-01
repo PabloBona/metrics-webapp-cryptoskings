@@ -18,3 +18,9 @@
   color: #fff;
   font-size: 0.8rem;
 }
+
+@media screen and (min-width: 424px) {
+  .coin-search-input::placeholder {
+    font-size: 1rem;
+  }
+}

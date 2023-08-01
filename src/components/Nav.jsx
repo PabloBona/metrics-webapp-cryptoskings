@@ -5,10 +5,12 @@ const Nav = () => (
   <nav className="navbar navbar-expand-sm">
     <div className="container">
       <div className="d-flex align-items-center">
-        <h3 className="align-self-end main-title m-0 text-white">
-          Crypto
-          <span className="d-inline"><img src="/logo.png" alt="planet" className="logo" /></span>
-          King`s
+        <h3 className="align-self-end main-title m-0 text-white ">
+          <NavLink to="/" className="navlink-title text-decoration-none text-white">
+            Crypto
+            <span className="d-inline"><img src="/logo.png" alt="planet" className="logo" /></span>
+            King`s
+          </NavLink>
         </h3>
       </div>
       <div>
