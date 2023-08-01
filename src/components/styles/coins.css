@@ -1,0 +1,72 @@
+.odd {
+  background-color: #4066b7;
+}
+
+.even {
+  background-color: #5887e5;
+}
+
+.iconStyle {
+  /* filter: grayscale(1); */
+  max-width: 50px;
+}
+
+.zero-pad {
+  padding: 0 !important;
+}
+
+.multipleClass {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.bg-stats {
+  background-color: #35548b;
+}
+
+.bg-stats h2 {
+  font-size: small;
+  text-transform: uppercase;
+  align-items: center;
+  line-height: 30px;
+  letter-spacing: 0.05rem;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-link:hover img {
+  transition: ease-in-out 0.5s;
+  transform: scale(1.2);
+}
+
+@media (min-width: 992px) {
+  .coin-card:is(:nth-child(8n+1), :nth-child(8n+3), :nth-child(8n+6), :nth-child(8n+8)) .card {
+    background-color: #5887e5;
+  }
+
+  .coin-card:is(:nth-child(8n+2), :nth-child(8n+4), :nth-child(8n+5), :nth-child(8n+7)) .card {
+    background-color: #4066b7;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .coin-card:nth-child(odd) .card {
+    background-color: #5887e5;
+  }
+
+  .coin-card:nth-child(even) .card {
+    background-color: #4066b7;
+  }
+}
+
+@media (max-width: 575px) {
+  .coin-card:is(:nth-child(4n+1), :nth-child(4n+4)) .card {
+    background-color: #5887e5;
+  }
+
+  .coin-card:is(:nth-child(4n+2), :nth-child(4n+3)) .card {
+    background-color: #4066b7;
+  }
+}

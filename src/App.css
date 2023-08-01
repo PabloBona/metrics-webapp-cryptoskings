@@ -1,6 +1,23 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.logo {
+  width: 40px;
+}
+
+nav {
+  background-color: #4066b7;
+  border-bottom: 1px solid #444;
+}
+
+nav li a {
+  color: rgb(173, 173, 173);
+  text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3 {
+  font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }

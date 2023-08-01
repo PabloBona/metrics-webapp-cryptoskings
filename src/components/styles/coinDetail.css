@@ -1,0 +1,30 @@
+.name-details {
+  background-color: #4066b7;
+}
+
+.rank-details {
+  background-color: #5887e5;
+}
+
+.details:nth-child(even) {
+  background-color: #5887e5;
+}
+
+.btn-back {
+  margin: 2px 2px;
+  position: fixed;
+  z-index: 3;
+  cursor: pointer;
+  background-color: #18459f;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding-left: 7.5px;
+  padding-top: 4.5px;
+}
+
+@media screen and (max-width: 530px) {
+  .details p:nth-child(1) {
+    font-size: 1.2rem !important;
+  }
+}

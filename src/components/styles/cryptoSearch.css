@@ -1,0 +1,26 @@
+
+.img-max-width {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+}
+
+.img-container {
+  background-color: #4066b7;
+  padding: 10px 0;
+}
+
+.search-form {
+  background-color: #4066b7;
+}
+
+.coin-search-input::placeholder {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 424px) {
+  .coin-search-input::placeholder {
+    font-size: 1rem;
+  }
+}
