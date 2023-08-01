@@ -11,7 +11,7 @@ const CryptoSearch = () => {
   const handleInputChange = (e) => {
     const global = e.target.value.trim();
     dispatch(setGlobalSearch(global));
-    console.log(global);
+    // console.log(global);
   };
 
   const handleSubmit = (e) => {
