@@ -12,7 +12,7 @@ const Nav = () => (
       </div>
       <div>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="fs-4 gap-3 mr-auto navbar-nav">
+          <ul className="flex-row fs-4 gap-3 mr-auto navbar-nav">
             <li className="nav-item">
               <NavLink to="/" className={(navData) => (navData.isActive ? 'active-style text-white' : 'none')}>Home</NavLink>
             </li>
