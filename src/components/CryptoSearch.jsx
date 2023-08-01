@@ -14,10 +14,8 @@ const CryptoSearch = () => {
     console.log(global);
   };
 
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
   };
 
   useEffect(() => {
@@ -31,16 +29,15 @@ const CryptoSearch = () => {
       <div className="d-flex justify-content-center img-container">
         <img className="img-fluid w-100 img-max-width" src={cryptos} alt="" />
       </div>
-      <div className="background py-2">
-        <form className="container">
-          <div className="row align-items-center">
-            <div className="col-12 col-sm-12">
+      <div className="search-form py-2">
+        <form className="container" onSubmit={handleSubmit}>
+          <div className="justify-content-center row">
+            <div className="col-8">
               <input
                 onChange={handleInputChange}
-                onKeyPress={handleKeyPress}
                 type="text"
-                className="form-control"
-                placeholder="Bitcoin, Ethereum, etc."
+                className="form-control coin-search-input"
+                placeholder="Enter coin name E.g: Litecoin"
               />
             </div>
           </div>

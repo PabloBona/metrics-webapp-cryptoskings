@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const fetchCoin = createAsyncThunk('coin/fetchCoin', async () => {
   try {
-    const response = await axios.get('https://api.coinstats.app/public/v1/coins?skip=0&limit=10&currency=USD');
+    const response = await axios.get('https://api.coinstats.app/public/v1/coins?skip=0&limit=60&currency=USD');
     return response.data;
   } catch (error) {
     throw new Error('Error fetching Coin data');

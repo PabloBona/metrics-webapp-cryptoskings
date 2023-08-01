@@ -6,5 +6,15 @@
 }
 
 .img-container {
-  background-color: #5887e5;
+  background-color: #4066b7;
+  padding: 10px 0;
+}
+
+.search-form {
+  background-color: #4066b7;
+}
+
+.coin-search-input::placeholder {
+  color: #fff;
+  font-size: 0.8rem;
 }

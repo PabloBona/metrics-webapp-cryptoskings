@@ -38,22 +38,30 @@ const Coins = () => {
   }
 
   return (
-
     <>
       <CryptoSearch />
-      <div className="main">
-        <div className="row">
-          <h2 className="text-white bg-stats m-0">Crypto Currency Stats</h2>
-          <>
-            {data.map((coin, index) => (
-              <CoinCard key={coin.rank} coin={coin} index={index} />
-            ))}
-          </>
-        </div>
-      </div>
+      <main>
+        <section className="bg-stats">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col">
+                <h2 className="text-white bg-stats m-0">Crypto Currency Stats</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="container-fluid p-0">
+            <div className="row g-0">
+              {data.map((coin, index) => (
+                <CoinCard key={coin.rank} coin={coin} index={index} />
+              ))}
+            </div>
+          </div>
+        </section>
 
+      </main>
     </>
-
   );
 };
 

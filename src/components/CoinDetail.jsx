@@ -6,7 +6,6 @@ const CoinDetail = () => {
     <div>
       <h2>
         Coin with id:
-        {' '}
         {id}
       </h2>
     </div>

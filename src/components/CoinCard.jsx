@@ -1,33 +1,27 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const CoinCard = ({ coin, index }) => {
-  const isIndex = (index === 0 || index === 3 || index === 4 || index === 7 || index === 8);
-  const isColor = isIndex ? 'odd' : 'even';
-  return (
-    <div className={`col-6 col-sm-6 col-md-6 col-lg-6 zero-pad ${isColor}`}>
-      <div className={`card border-0 rounded-0 m-0 ${isColor}`}>
+const CoinCard = ({ coin }) => (
+  <div className="coin-card col-6 col-sm-4 col-md-4 col-lg-3">
+    <Link to={`/coins/${coin.id}`} className="card-link">
+      <div className="card border-0 rounded-0 m-0">
         <div className="align-items-sm-center card-body d-flex flex-column">
           <div className="align-self-center">
-            <Link to={`/coins/${coin.id}`}>
-              <img className={`iconStyle p-1 rounded-5 ${isColor}`} src={coin.icon} alt="" />
-            </Link>
+            <img className="iconStyle p-1 rounded-5" src={coin.icon} alt="" />
           </div>
           <div className="">
-            <h3 className="fs-6 fw-bold my-3 text-center text-white">{coin.name}</h3>
+            <h3 className="fs-4 fw-bold my-3 text-center text-white">{coin.name}</h3>
           </div>
           <div className="align-self-center">
-            <div className="fs-6 text-center text-white">
-              Price:
-              <br />
-              {coin.price.toFixed(2)}
-            </div>
+            <p className="fs-5 text-center text-white m-0">
+              {`$${coin.price.toFixed(5)}`}
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  );
-};
+    </Link>
+  </div>
+);
 
 CoinCard.propTypes = {
   coin: PropTypes.shape({
@@ -36,7 +30,6 @@ CoinCard.propTypes = {
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
   }).isRequired,
-  index: PropTypes.number.isRequired,
 };
 
 export default CoinCard;
