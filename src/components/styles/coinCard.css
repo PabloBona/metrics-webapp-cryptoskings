@@ -4,3 +4,15 @@
     font-size: 1rem;
   }
 }
+
+@media (min-width: 600px) {
+  .coin-name {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .coin-name {
+    font-size: 1.3rem;
+  }
+}
