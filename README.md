@@ -1,70 +1,230 @@
-# Getting Started with Create React App
+# CryptoKings - React Capstone Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="./public/logo.png" alt="logo" width="140"  height="auto" />
+</div>
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
 
-In the project directory, you can run:
+# 📗 Table of Contents
 
-### `npm start`
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 CryptoKings](#cryptokings)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Design Guidelines ](#design-guidelines-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#getting-started)
+    - [Install](#-install)
+    - [Usage](#-usage)
+    - [Run Tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show Your Support ](#️-show-your-support-)
+  - [📝 License ](#-license-)
+  - [🎬 Project Documentation ](#project-documentation)
 
-Runs the app in the development mode.\
+<!-- PROJECT DESCRIPTION -->
+<br>
+
+# 📖 CryptoKings (cryptokings) <a name="cryptokings"></a>
+
+In this React capstone project, we have built a mobile web application called CryptoKings. The application allows users to explore a list of cryptocurrency coins and view their details. Users can filter the coins based on specific parameters such as name or price. The application fetches real-time data from an open cryptocurrency API.
+
+# How it Works
+The CryptoKings web app consists of two main sections:
+
+# Home Page - Coin List
+The Home Page displays a list of cryptocurrency coins along with their respective numeric values, which are fetched from the API. Users can filter the coins based on parameters like name or price. Clicking on a coin item will navigate the user to the details page for that coin.
+
+# Coin Details Page
+In the Coin Details Page, users can view more detailed information about a specific cryptocurrency coin. This page fetches detailed data about the selected coin from the API. The user can then click the "Back" button (<) to return to the Home Page and explore other coins.
+
+<br>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+The CryptoKings web application is built using the following tech stack:
+
+<details>
+  <ul>
+    <li><a href="https://reactjs.org/">ReactJS</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+    <li><a href="https://www.npmjs.com/package/redux-thunk">Redux Thunk</a></li>
+    <li><a href="https://jestjs.io/">Jest</a> (for unit testing)</li>
+    <li><a href="https://testing-library.com/docs/react-testing-library/intro/">React Testing Library</a> (for integration testing)</li>
+    <li><a href="https://www.netlify.com/">Netlify</a> (for deployment)</li>
+ </ul>
+</details>
+
+<!-- Features -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Design Guidelines <a name="design-guidelines"></a>
+
+The CryptoKings web application follows the design guidelines outlined in the Figma design template by Nelson Sakwa. The design includes a selected main color scheme, typography, and layout composition.
+
+Credits: Original design idea by Nelson Sakwa on Behance. The design is used under the Creative Commons license, and appropriate credit is given to the author.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### 🚀 Live Demo <a name="live-demo"></a>
+<a href="https://crypto-kings.netlify.app/">Live Demo</a>
+
+<!-- GETTING STARTED -->
+<br>
+
+# 💻 Getting Started <a name="getting-started"></a>
+
+Clone this repository to your desired folder:
+
+Example commands:
+
+```bash
+  git clone git@github.com:PabloBona/metrics-webapp.git
+```
+<br>
+
+# 📖 Install
+
+Install this project's dependencies with:
+```
+cd metrics-webapp
+npm install
+```
+
+<br>
+
+# 📖 Usage
+
+To
+
+ run the project, execute the following command:
+
+```bash
+ npm run start
+```
+
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Run Tests
 
-### `npm run build`
+Run unit and integration tests using the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm test
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Note: The tests may require mocking the API access and Redux Store connection for proper testing.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
+
+# 📖 Run Linter Tests
+
+Optionally, you can run linter tests using the following commands:
+
+```$
+  npx hint .
+```
+
+```$
+  npx stylelint "**/*.scss"
+```
+
+or if you use CSS, run this instead of the latter command above:
+
+```$
+  npx stylelint "**/*.{css,scss}"
+```
+
+<br>
+
+# Available Scripts
+
+In the project directory, you can run:
 
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The CryptoKings web application is deployed and accessible online using Netlify. You can access the live demo by clicking the following link:
 
-## Learn More
+[Live Demo](https://crypto-kings.netlify.app/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Code Splitting
+<!-- AUTHORS -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 👥 Authors <a name="authors"></a>
 
-### Analyzing the Bundle Size
+The CryptoKings web application is created and maintained by:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- 👤 **Pablo Bonasera** - GitHub: [@PabloBona](https://github.com/PabloBona)
 
-### Making a Progressive Web App
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Advanced Configuration
+<!-- FUTURE FEATURES -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔭 Future Features <a name="future-features"></a>
 
-### Deployment
+- [ ] **Customizable notifications and alerts**
+- [ ] **Multilingual support**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br>
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/PabloBona/metrics-webapp/issues).
+
+<br>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show Your Support <a name="support"></a>
+
+If you like this project, you can show your support by giving it a star on GitHub.
+
+<br>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/PabloBona/metrics-webapp/blob/dev/MIT.md) licensed.
+
+<br>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
