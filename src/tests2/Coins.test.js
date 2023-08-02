@@ -1,16 +1,13 @@
 // In your test file (Coins.test.js)
 import { render, screen } from '@testing-library/react';
-
 import mockData from './__mocks__/mockData';
-import CoinCard from '../components/CoinCard';
 
 jest.mock('react-redux', () => ({
   useDispatch: () => jest.fn(),
-  useSelector: jest.fn((selector) => selector(mockData.js)),
+  useSelector: jest.fn((selector) => selector({ coinSlice: { coin: mockData } })),
 }));
-
 jest.mock('../redux/slices/coinSlice', () => ({
-  fetchCoin: jest.fn(),
+  fetchCoin: jest.fn(() => Promise.resolve(mockData)),
 }));
 
 describe('Coins Component', () => {
