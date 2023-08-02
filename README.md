@@ -34,7 +34,7 @@
 In this React capstone project, we have built a mobile web application called CryptoKings. The application allows users to explore a list of cryptocurrency coins and view their details. Users can filter the coins based on specific parameters such as name or price. The application fetches real-time data from an open cryptocurrency API.
 
 # How it Works
-The CryptoKings web app consists of two main sections:
+The CryptoKings web app consists of two sections:
 
 # Home Page - Coin List
 The Home Page displays a list of cryptocurrency coins along with their respective numeric values, which are fetched from the API. Users can filter the coins based on parameters like name or price. Clicking on a coin item will navigate the user to the details page for that coin.

@@ -17,6 +17,9 @@ const CoinCard = ({ coin }) => (
             <p className="fs-5 text-center text-white m-0">
               {`$${coin.price.toFixed(5)}`}
             </p>
+            <p className="fs-5 text-center text-white m-0">
+              {`Rank ${coin.rank}`}
+            </p>
           </div>
         </div>
       </div>
@@ -30,6 +33,7 @@ CoinCard.propTypes = {
     icon: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
+    rank: PropTypes.number.isRequired,
   }).isRequired,
 };
 
