@@ -1,5 +1,5 @@
 import './styles/cryptoSearch.css';
-import cryptos from '../cryptos.png';
+import cryptos from '../assets/cryptos.png';
 
 // eslint-disable-next-line react/prop-types
 const CryptoSearch = ({ handleInputChange }) => {
