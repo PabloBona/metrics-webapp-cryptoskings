@@ -1,4 +1,4 @@
-const data = {
+const mockResponse = {
   coins: [
     {
       id: 'bitcoin',
@@ -74,5 +74,5 @@ const data = {
 };
 
 export default {
-  get: jest.fn().mockResolvedValue({ data }),
+  get: jest.fn().mockResolvedValue({ mockResponse }),
 };
