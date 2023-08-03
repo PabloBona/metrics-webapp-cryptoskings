@@ -229,6 +229,19 @@ If you like this project, you can show your support by giving it a star on GitHu
 
 <!-- LICENSE -->
 
+## ⭐️ Acknowledgments <a name="support"></a>
+
+The original design idea for this project was conceived by **Nelson Sakwa**, whose exceptional creativity and talent brought forth this inspiring piece of art. We would like to express our heartfelt appreciation to Nelson Sakwa for sharing this design under the Creative Commons license, allowing us to incorporate its captivating aesthetics into our project.
+
+## About Nelson Sakwa
+
+To learn more about Nelson Sakwa and explore more of their incredible work, please visit their profile on Behance:
+
+[Nelson Sakwa's Profile on Behance](https://www.behance.net/sakwadesignstudio)
+
+
+<!-- LICENSE -->
+
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/PabloBona/metrics-webapp/blob/dev/MIT.md) licensed.
