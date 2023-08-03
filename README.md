@@ -2,6 +2,7 @@
 
 <div align="center">
   <img src="./public/logo.png" alt="logo" width="140"  height="auto" />
+  <h3> React Capstone Project </h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
