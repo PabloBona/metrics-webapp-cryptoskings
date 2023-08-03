@@ -67,6 +67,7 @@ The CryptoKings web application is built using the following tech stack:
 </details>
 
 <!-- Features -->
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Design Guidelines <a name="design-guidelines"></a>
