@@ -7,7 +7,7 @@ const DetailCard = ({ atributte, title }) => (
       <p className="align-self-center m-4 fs-3">
         {title}
       </p>
-      <p className="align-self-center m-4 fs-2">
+      <p className="align-self-center m-4 fs-5">
         {atributte}
       </p>
     </div>

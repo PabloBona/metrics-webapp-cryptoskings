@@ -22,6 +22,38 @@ const MockedCoinCard = ({ coin }) => (
   </BrowserRouter>
 );
 
+describe('CoinCard Component', () => {
+  test('renders coin name', () => {
+    render(<MockedCoinCard coin={mockData} />);
+    const coinNameElement = screen.getByText(mockData.name);
+    expect(coinNameElement).toBeInTheDocument();
+    expect(coinNameElement).toMatchSnapshot();
+  });
+
+  test('renders coin price', () => {
+    render(<MockedCoinCard coin={mockData} />);
+    const coinPriceElement = screen.getByText(`$${mockData.price.toFixed(5)}`);
+    expect(coinPriceElement).toBeInTheDocument();
+    expect(coinPriceElement).toMatchSnapshot();
+  });
+
+  test('renders coin rank', () => {
+    render(<MockedCoinCard coin={mockData} />);
+    const coinRankElement = screen.getByText(`Rank ${mockData.rank}`);
+    expect(coinRankElement).toBeInTheDocument();
+    expect(coinRankElement).toMatchSnapshot();
+  });
+
+  test('renders link with correct URL', () => {
+    render(<MockedCoinCard coin={mockData} />);
+    const linkElement = screen.getByRole('link');
+    expect(linkElement).toHaveAttribute('href', `/coins/${mockData.id}`);
+    expect(linkElement).toMatchSnapshot();
+  });
+
+  // Add more test cases as needed for other parts of the CoinCard component
+});
+
 MockedCoinCard.propTypes = {
   coin: PropTypes.shape({
     id: PropTypes.string.isRequired,
@@ -31,31 +63,3 @@ MockedCoinCard.propTypes = {
     rank: PropTypes.number.isRequired,
   }).isRequired,
 };
-
-describe('CoinCard Component', () => {
-  test('renders coin name', () => {
-    render(<MockedCoinCard coin={mockData} />);
-    const coinNameElement = screen.getByText(mockData.name);
-    expect(coinNameElement).toBeInTheDocument();
-  });
-
-  test('renders coin price', () => {
-    render(<MockedCoinCard coin={mockData} />);
-    const coinPriceElement = screen.getByText(`$${mockData.price.toFixed(5)}`);
-    expect(coinPriceElement).toBeInTheDocument();
-  });
-
-  test('renders coin rank', () => {
-    render(<MockedCoinCard coin={mockData} />);
-    const coinRankElement = screen.getByText(`Rank ${mockData.rank}`);
-    expect(coinRankElement).toBeInTheDocument();
-  });
-
-  test('renders link with correct URL', () => {
-    render(<MockedCoinCard coin={mockData} />);
-    const linkElement = screen.getByRole('link');
-    expect(linkElement).toHaveAttribute('href', `/coins/${mockData.id}`);
-  });
-
-  // Add more test cases as needed for other parts of the CoinCard component
-});

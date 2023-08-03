@@ -1,12 +1,10 @@
 import { render, screen } from '@testing-library/react';
 
-// Mock the useParams hook
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
-  useParams: () => ({ id: 'bitcoin' }), // Replace 'bitcoin' with the ID you want to test
+  useParams: () => ({ id: 'bitcoin' }),
 }));
 
-// Mock the fetchCoin action creator
 jest.mock('../redux/slices/coinSlice', () => ({
   fetchCoin: jest.fn(),
 }));
@@ -20,7 +18,6 @@ describe('CoinDetail Component', () => {
     );
     const loadingElement = screen.getByTestId('h2test');
     expect(loadingElement).toHaveTextContent('Loading...');
+    expect(loadingElement).toMatchSnapshot();
   });
-
-  // Add more test cases as needed
 });
