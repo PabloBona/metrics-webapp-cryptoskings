@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Coins Component renders Crypto Currency Stats when Render   1`] = `
+<h2
+  class="text-white bg-stats m-0"
+>
+  Crypto Currency Stats
+</h2>
+`;
+
+exports[`Coins Component renders loading when data is not yet available 1`] = `
+<h2
+  class="align-items-center d-flex justify-content-center text-light vh-100"
+  data-testid="h2test"
+>
+  Loading...
+</h2>
+`;

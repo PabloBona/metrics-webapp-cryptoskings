@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CoinCard Component renders coin name 1`] = `
+<h3
+  class="coin-name  my-3 text-center text-white"
+>
+  Bitcoin
+</h3>
+`;
+
+exports[`CoinCard Component renders coin price 1`] = `
+<p
+  class="fs-5 text-center text-white m-0"
+>
+  $6362.74961
+</p>
+`;
+
+exports[`CoinCard Component renders coin rank 1`] = `
+<p
+  class="fs-5 text-center text-white m-0"
+>
+  Rank 1
+</p>
+`;
+
+exports[`CoinCard Component renders link with correct URL 1`] = `
+<a
+  class="card-link"
+  href="/coins/bitcoin"
+>
+  <div
+    class="card border-0 rounded-0 m-0"
+  >
+    <div
+      class="align-items-sm-center card-body d-flex flex-column"
+    >
+      <div
+        class="align-self-center"
+      >
+        <img
+          alt=""
+          class="iconStyle p-1 rounded-5"
+          src="https://static.coinstats.app/coins/1650455588819.png"
+        />
+      </div>
+      <div>
+        <h3
+          class="coin-name  my-3 text-center text-white"
+        >
+          Bitcoin
+        </h3>
+      </div>
+      <div
+        class="align-self-center container-details"
+      >
+        <p
+          class="fs-5 text-center text-white m-0"
+        >
+          $6362.74961
+        </p>
+        <p
+          class="fs-5 text-center text-white m-0"
+        >
+          Rank 1
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+`;

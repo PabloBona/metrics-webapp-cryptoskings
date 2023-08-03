@@ -11,13 +11,13 @@ const CoinCard = ({ coin }) => (
             <img className="iconStyle p-1 rounded-5" src={coin.icon} alt="" />
           </div>
           <div>
-            <h3 className="coin-name fw-bold my-3 text-center text-white">{coin.name}</h3>
+            <h3 className="coin-name  my-3 text-center text-white">{coin.name}</h3>
           </div>
-          <div className="align-self-center">
-            <p className="fs-5 text-center text-white m-0">
+          <div className="align-self-center container-details">
+            <p className="fs-6 text-center text-white m-0">
               {`$${coin.price.toFixed(5)}`}
             </p>
-            <p className="fs-5 text-center text-white m-0">
+            <p className="fs-6 text-center text-white m-0">
               {`Rank ${coin.rank}`}
             </p>
           </div>

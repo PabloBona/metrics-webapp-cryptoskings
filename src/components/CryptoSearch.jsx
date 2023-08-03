@@ -1,7 +1,7 @@
 import './styles/cryptoSearch.css';
+import PropTypes from 'prop-types';
 import cryptos from '../assets/cryptos.png';
 
-// eslint-disable-next-line react/prop-types
 const CryptoSearch = ({ handleInputChange }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,5 +29,8 @@ const CryptoSearch = ({ handleInputChange }) => {
     </>
   );
 };
+CryptoSearch.propTypes = {
+  handleInputChange: PropTypes.func.isRequired,
 
+};
 export default CryptoSearch;
