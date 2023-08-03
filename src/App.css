@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gill-sans-mt-2');
+
+body,
+h1,
+h2,
+h3 {
+  font-family: 'Gill Sans MT', sans-serif;
+}
 
 .logo {
   width: 40px;
@@ -17,11 +25,4 @@ nav {
 nav li a {
   color: rgb(173, 173, 173);
   text-decoration: none;
-}
-
-body,
-h1,
-h2,
-h3 {
-  font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
