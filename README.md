@@ -78,7 +78,7 @@ Credits: Original design idea by Nelson Sakwa on Behance. The design is used und
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### 🚀 Live Demo <a name="live-demo"></a>
-<a href="https://crypto-kings.netlify.app/">Live Demo</a>
+<a href="https://cryptoskings.netlify.app/">Live Demo</a>
 
 <!-- GETTING STARTED -->
 <br>
