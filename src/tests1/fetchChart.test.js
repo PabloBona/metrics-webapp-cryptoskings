@@ -27,7 +27,7 @@ describe('fetchChart Thunk', () => {
 
   it('should fetch chart data successfully', async () => {
     const mockChartData = { /* ... */ };
-    const coinId = 'btc'; // Replace with a valid coin ID for testing
+    const coinId = 'btc';
     axiosGetSpy.mockResolvedValueOnce({ data: mockChartData });
 
     await store.dispatch(fetchChart(coinId));
@@ -39,7 +39,7 @@ describe('fetchChart Thunk', () => {
   });
 
   it('should handle fetchChart error', async () => {
-    const coinId = 'btc'; // Replace with a valid coin ID for testing
+    const coinId = 'btc';
     const errorMessage = 'Network Error';
     axiosGetSpy.mockRejectedValueOnce(new Error(errorMessage));
 

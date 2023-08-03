@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 .logo {
   width: 40px;
+}
+
+:root {
+  --bs-body-font-family: 'Lato', sans-serif;
+  --bs-body-bg: #598ce8;
 }
 
 nav {
