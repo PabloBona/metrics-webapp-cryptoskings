@@ -35,7 +35,7 @@ describe('fetchCoin Thunk', () => {
           symbol: 'BTC',
           price: 6362.74960614,
         },
-        // Add more mock coin data if needed
+
       ],
     };
     axiosGetSpy.mockResolvedValueOnce({ data: mockCoinData });

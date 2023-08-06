@@ -10,14 +10,11 @@ describe('Nav Component', () => {
       </BrowserRouter>,
     );
 
-    // Get the navigation link element
     const navLinkElement = screen.getByRole('link');
 
-    // Assert that the navigation link has the correct text and URL
     expect(navLinkElement).toBeInTheDocument();
     expect(navLinkElement).toHaveTextContent('CryptoKing`s');
 
-    // Ensure that the link points to the correct URL
     expect(navLinkElement).toHaveAttribute('href', '/');
   });
 
@@ -28,12 +25,8 @@ describe('Nav Component', () => {
       </BrowserRouter>,
     );
 
-    // Get the logo image element
     const logoImageElement = screen.getByAltText('crown');
 
-    // Assert that the logo image is present
     expect(logoImageElement).toBeInTheDocument();
   });
-
-  // Add more test cases as needed for other parts of the Nav component
 });
