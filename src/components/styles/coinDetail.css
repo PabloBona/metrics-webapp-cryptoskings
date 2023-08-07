@@ -10,15 +10,8 @@
   background-color: #5887e5;
 }
 
-.bg {
-  background-image: url("/public/coin-bg.jpg");
-  background-size: cover;
-  padding: 3rem 0 3rem 0;
-}
-
 .icon {
-  width: 10%;
-  height: 10%;
+  max-width: 10%;
   border-radius: 50% !important;
   background-color: aliceblue;
 }
