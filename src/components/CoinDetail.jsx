@@ -41,6 +41,9 @@ const CoinDetail = () => {
   return (
     <div className="container-fluid" key={coin.id}>
       <div className="row name-details">
+        <div className="align-self-center col d-flex justify-content-center bg">
+          <img className="icon p-1 rounded-5" src={coin.icon} alt="" />
+        </div>
         <NavLink to="/" className="text-white btn-back">
           <i className="bx bx-arrow-back" />
         </NavLink>
