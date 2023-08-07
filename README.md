@@ -2,6 +2,7 @@
 
 <div align="center">
   <img src="./public/logo.png" alt="logo" width="140"  height="auto" />
+  <h3> React Capstone Project </h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -67,6 +68,7 @@ The CryptoKings web application is built using the following tech stack:
 </details>
 
 <!-- Features -->
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Design Guidelines <a name="design-guidelines"></a>
@@ -78,7 +80,13 @@ Credits: Original design idea by Nelson Sakwa on Behance. The design is used und
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### 🚀 Live Demo <a name="live-demo"></a>
-<a href="https://crypto-kings.netlify.app/">Live Demo</a>
+<a href="https://cryptoskings.netlify.app/">Live Demo</a>
+
+<!-- GETTING STARTED -->
+<br>
+
+### 🚀 Presentation Video 
+<a href="https://drive.google.com/file/d/1ebLDgW4fpoal4sebBb46jKsV17lJeLkh/view?usp=sharing">Live Demo</a>
 
 <!-- GETTING STARTED -->
 <br>
@@ -218,6 +226,19 @@ If you like this project, you can show your support by giving it a star on GitHu
 <br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## ⭐️ Acknowledgments <a name="support"></a>
+
+The original design idea for this project was conceived by **Nelson Sakwa**, whose exceptional creativity and talent brought forth this inspiring piece of art. We would like to express our heartfelt appreciation to Nelson Sakwa for sharing this design under the Creative Commons license, allowing us to incorporate its captivating aesthetics into our project.
+
+## About Nelson Sakwa
+
+To learn more about Nelson Sakwa and explore more of their incredible work, please visit their profile on Behance:
+
+[Nelson Sakwa's Profile on Behance](https://www.behance.net/sakwadesignstudio)
+
 
 <!-- LICENSE -->
 
